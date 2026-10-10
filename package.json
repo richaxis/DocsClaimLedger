@@ -1,0 +1,12 @@
+{
+  "name": "docs-claim-ledger",
+  "version": "0.1.0",
+  "description": "A ledger of machine-checkable documentation claims that anyone can challenge, settled by GenLayer validators",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "check": "python scripts/check_contract.py",
+    "test": "python -m unittest discover -s tests/unit && python -m unittest discover -s tests/direct",
+    "lint": "genvm-lint check contracts/DocsClaimLedger.py"
+  }
+}
